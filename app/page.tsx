@@ -10,6 +10,7 @@ export default function Home() {
       description: "สูงสุดดอยแม่สลอง พระบรมธาตุเจดีย์ศรีนครินทร์สถิตมหาสันติคีรี",
       color: "from-purple-500 to-indigo-600",
       image: "/images/North_main.png",
+      url: "/province/chiang-rai",
     },
     {
       id: "central",
@@ -18,6 +19,7 @@ export default function Home() {
       description: "เที่ยวเมืองพริบพรี เพชรบุรีเมืองอาหารสร้างสรรค์",
       color: "from-amber-400 to-orange-500", // Gold theme
       image: "/images/Central_main.png",
+      url: "#",
     },
     {
       id: "northeast",
@@ -26,6 +28,7 @@ export default function Home() {
       description: "สู่ทะเลบัวแดงกุมภวาปี สวรรค์สัตว์ป่าแห่งภาคอีสาน",
       color: "from-orange-500 to-red-500",
       image: "/images/East_main.png",
+      url: "#",
     },
     {
       id: "south",
@@ -34,6 +37,7 @@ export default function Home() {
       description: "ทะเลไทยสวยไม่แพ้ที่ใดในโลก",
       color: "from-blue-400 to-cyan-500", // Blue theme
       image: "/images/South_main.png",
+      url: "#",
     },
   ];
 
@@ -50,10 +54,10 @@ export default function Home() {
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
-                <Link href="#" className="text-white text-xl hover:text-thai-gold transition-colors duration-200 font-bold">หน้าแรก</Link>
-                <Link href="#regions" className="text-white text-xl hover:text-thai-purple transition-colors duration-200 font-bold">ภูมิภาค</Link>
-                <Link href="#highlights" className="text-white text-xl hover:text-thai-blue transition-colors duration-200 font-bold">ไฮไลท์</Link>
-                <Link href="#contact" className="text-white text-xl hover:text-thai-gold transition-colors duration-200 font-bold">ติดต่อ</Link>
+                <Link href="#" className="text-[#15173D] text-xl hover:text-thai-gold transition-colors duration-200 font-bold">หน้าแรก</Link>
+                <Link href="#regions" className="text-[#15173D] text-xl hover:text-thai-purple transition-colors duration-200 font-bold">ภูมิภาค</Link>
+                <Link href="#highlights" className="text-[#15173D] text-xl hover:text-thai-blue transition-colors duration-200 font-bold">ไฮไลท์</Link>
+                <Link href="#contact" className="text-[#15173D] text-xl hover:text-thai-gold transition-colors duration-200 font-bold">ติดต่อ</Link>
               </div>
             </div>
           </div>
@@ -62,13 +66,22 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Overlay */}
-        <div className="absolute inset-0 z-0 bg-gradient-hero opacity-90"></div>
+        {/* Background Image */}
+        <Image
+          src="/images/thailand.jpg"
+          alt="ประเทศไทย"
+          fill
+          className="object-cover z-0"
+          priority
+        />
+
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/40 z-1"></div>
 
         {/* Decorative Circles */}
-        <div className="absolute top-20 left-10 w-72 h-72 bg-thai-purple rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
-        <div className="absolute top-20 right-10 w-72 h-72 bg-thai-gold rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
-        <div className="absolute -bottom-32 left-20 w-72 h-72 bg-thai-blue rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-thai-purple rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob z-2"></div>
+        <div className="absolute top-20 right-10 w-72 h-72 bg-thai-gold rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000 z-2"></div>
+        <div className="absolute -bottom-32 left-20 w-72 h-72 bg-thai-blue rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000 z-2"></div>
 
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
           <h1 className="text-5xl md:text-8xl font-bold mb-6 tracking-tight text-white drop-shadow-lg">
@@ -106,9 +119,10 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {regions.map((region) => (
-              <div
+              <Link
                 key={region.id}
-                className="group relative h-[400px] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer"
+                href={region.url}
+                className="group relative h-[400px] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer block"
               >
                 {/* Background Image */}
                 <Image
@@ -132,7 +146,7 @@ export default function Home() {
                     อ่านต่อ <span className="ml-2">→</span>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
