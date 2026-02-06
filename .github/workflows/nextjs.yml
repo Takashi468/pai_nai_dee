@@ -1,8 +1,9 @@
-name: Deploy Next.js site to Pages (Bun)
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["master"]
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
@@ -21,44 +22,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # ------------------------------------------------------------
-      # ติดตั้ง Bun runtime
-      # ------------------------------------------------------------
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          bun-version: "1.0.30" # หรือ latest
+          node-version: "20"
 
-      # ------------------------------------------------------------
-      # Cache ของ Bun (bun.lockb เป็น key)
-      # ------------------------------------------------------------
-      - name: Cache Bun dependencies
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.bun/install/cache
-          key: ${{ runner.os }}-bun-${{ hashFiles('**/bun.lockb') }}
-          restore-keys: |
-            ${{ runner.os }}-bun-
-
-      # ------------------------------------------------------------
-      # Install dependencies ด้วย bun
-      # ------------------------------------------------------------
       - name: Install dependencies
-        run: |
-          bun install --frozen-lockfile
+        run: npm install
 
-      # ------------------------------------------------------------
-      # Build + export Next.js
-      # ------------------------------------------------------------
-      - name: Build Next.js
-        run: |
-          bun run next build
-          bun run next export
+      - name: Build
+        run: npm run build
 
-      # ------------------------------------------------------------
-      # Upload static site
-      # ------------------------------------------------------------
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
