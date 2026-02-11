@@ -23,11 +23,29 @@ export default function Home() {
     },
     {
       id: "northeast",
-      name: "ภาคอีสาน",
-      province: "อุดรธานี",
-      description: "สู่ทะเลบัวแดงกุมภวาปี สวรรค์สัตว์ป่าแห่งภาคอีสาน",
+      name: "ภาคตะวันออกเฉียงเหนือ",
+      province: "หนองคาย",
+      description: "มหาประตูสู่อินโดจีน ถิ่นวีรกรรมปราบฮ่อ หลวงพ่อพระใส",
       color: "from-orange-500 to-red-500",
-      image: "./images/East_main.png",
+      image: "./images/East_main.png", // Reusing existing image for now
+      url: "/province/nong_khai",
+    },
+    {
+      id: "east",
+      name: "ภาคตะวันออก",
+      province: "ชลบุรี",
+      description: "ทะเลสวย น้ำใส ใกล้กรุง แหล่งรวมความบันเทิง",
+      color: "from-blue-400 to-teal-400",
+      image: "./images/East_main.png", // Reusing existing image
+      url: "#",
+    },
+    {
+      id: "west",
+      name: "ภาคตะวันตก",
+      province: "กาญจนบุรี",
+      description: "ดินแดนแห่งประวัติศาสตร์ ธรรมชาติขุนเขา และสายน้ำ",
+      color: "from-green-500 to-emerald-600",
+      image: "./images/Central_main.png", // Reusing existing image
       url: "#",
     },
     {
@@ -35,7 +53,7 @@ export default function Home() {
       name: "ภาคใต้",
       province: "สตูล",
       description: "ทะเลไทยสวยไม่แพ้ที่ใดในโลก",
-      color: "from-blue-400 to-cyan-500", // Blue theme
+      color: "from-blue-500 to-indigo-500", // Deep Blue theme
       image: "./images/South_main.png",
       url: "#",
     },
@@ -114,10 +132,10 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">เลือกภูมิภาคที่คุณสนใจ</h2>
             <div className="h-1 w-24 bg-linear-to-r from-thai-purple to-thai-blue mx-auto rounded-full"></div>
-            <p className="mt-4 text-lg text-slate-600 dark:text-slate-400">4 จังหวัดตัวแทนความภูมิใจจาก 4 ภาค</p>
+            <p className="mt-4 text-lg text-slate-600 dark:text-slate-400">6 จังหวัดตัวแทนความภูมิใจจาก 6 ภาค</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {regions.map((region) => (
               <Link
                 key={region.id}
