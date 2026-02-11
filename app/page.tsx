@@ -86,7 +86,7 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <Image
-          src="./images/thailand.jpg"
+          src="/images/thailand.jpg"
           alt="ประเทศไทย"
           fill
           className="object-cover z-0"
