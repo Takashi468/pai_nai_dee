@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { nongKhaiAttractions } from "@/data/provinces/nong_khai";
+import nongKhaiPageImg from "@/assets/images/nong_khai/nong_khai_page.jpg";
+import watPhoChaiFeaturedImg from "@/assets/images/nong_khai/wat-pho-chai-featured.jpg";
 
 export default function NongKhaiPage() {
     const attractions = nongKhaiAttractions;
@@ -41,7 +43,7 @@ export default function NongKhaiPage() {
             <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
                 {/* Background Image */}
                 <Image
-                    src="./images/nong_khai/nong_khai_page.jpg"
+                    src={nongKhaiPageImg}
                     alt="หนองคาย"
                     fill
                     className="object-cover z-0"
@@ -151,7 +153,7 @@ export default function NongKhaiPage() {
                         {/* Featured Image */}
                         <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl">
                             <Image
-                                src="./images/nong_khai/wat-pho-chai-featured.jpg"
+                                src={watPhoChaiFeaturedImg}
                                 alt="วัดโพธิ์ชัย"
                                 fill
                                 className="object-cover"

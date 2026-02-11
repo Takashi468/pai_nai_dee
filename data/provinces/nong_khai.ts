@@ -1,10 +1,18 @@
+import { StaticImageData } from "next/image";
+import namTokThanThongImg from "@/assets/images/nong_khai/nam_tok_than_thong.jpg";
+import nongKutThingImg from "@/assets/images/nong_khai/nong_kut_thing.jpg";
+import watPhoChaiImg from "@/assets/images/nong_khai/wat_pho_chai.jpg";
+import saphanMitraphapImg from "@/assets/images/nong_khai/saphan_mitraphap_thai_lao.jpg";
+import lanPhayaNakImg from "@/assets/images/nong_khai/lan_phaya_nak_rim_khong.jpg";
+import talatKhaemKhongImg from "@/assets/images/nong_khai/talat_khaem_khong.jpg";
+
 export interface Attraction {
   id: number;
   slug: string;
   name: string;
   description: string;
   highlight: string;
-  image: string;
+  image: StaticImageData | string;
   details: string; // Extended details for the separate page
 }
 
@@ -15,7 +23,7 @@ export const nongKhaiAttractions: Attraction[] = [
     name: "น้ำตกธารทอง",
     description: "น้ำตกที่สวยงาม มีน้ำไหลตลอดทั้งปี",
     highlight: "น้ำตกที่สวยงาม",
-    image: "./images/nong_khai/nam_tok_than_thong.jpg",
+    image: namTokThanThongImg,
     details: `วัดโพธิ์ชัย เป็นพระอารามหลวงชั้นตรี ชนิดสามัญ ประดิษฐาน "หลวงพ่อพระใส" พระพุทธรูปศักดิ์สิทธิ์คู่บ้านคู่เมืองหนองคาย เป็นที่สักการะศรัทธาของประชาชนทั้งชาวไทยและชาวลาว
 
       ส่วนชั้นสุดท้ายก่อนสายน้ำจะไหลลงสู่ ลำน้ำโขง มีระยะทางประมาณ 30 เมตร ช่วงเวลาที่สวยที่สุดในการมาเที่ยวชมน้ำตกคือระหว่างเดือนมิถุนายน-เดือนพฤศจิกายน
@@ -29,7 +37,7 @@ export const nongKhaiAttractions: Attraction[] = [
     name: "หนองกุดทิง",
     description: "หนองน้ำขนาดใหญ่ มีนกนานาชนิดอาศัยอยู่",
     highlight: "นกนานาชนิด",
-    image: "./images/nong_khai/nong_kut_thing.jpg",
+    image: nongKutThingImg,
     details: `หนองกุดทิง  เป็นหนองน้ำขนาดใหญ่มีความกว้างโดยเฉลี่ย 22,000 ไร่ ลึก 5-10 เมตร มีความหลากหลายทางชีวภาพประกอบด้วยสัตว์น้ำกว่า 250 สายพันธุ์ มีปลาที่เป็นเอกลักษณ์ไม่มีที่ใดในโลก 20 สายพันธ์ พืชน้ำกว่า 200 ชนิด
       
       เป็นที่ทำมาหากินของประชาชนในบริเวณนั้นกว่า 2,000 ครัวเรือน มีนกพันธุ์ต่างๆกว่า 40 ชนิด ด้วยความอุดมสมบูรณ์ดังกล่าวจึงได้ขึ้นทะเบียนเป็นพื้นที่ชุ่มน้ำโลกแห่งที่สองของจังหวัดหนองคาย  
@@ -43,7 +51,7 @@ export const nongKhaiAttractions: Attraction[] = [
     name: "วัดโพธิ์ชัย",
     description: "หลวงพ่อพระใส พระคู่บ้านคู่เมืองหนองคาย",
     highlight: "หลวงพ่อพระใส",
-    image: "./images/nong_khai/wat_pho_chai.jpg",
+    image: watPhoChaiImg,
     details: `วัดโพธิ์ชัย เป็นพระอารามหลวงชั้นตรี ชนิดสามัญ ประดิษฐาน "หลวงพ่อพระใส" พระพุทธรูปศักดิ์สิทธิ์คู่บ้านคู่เมืองหนองคาย เป็นที่สักการะศรัทธาของประชาชนทั้งชาวไทยและชาวลาว
 
 หลวงพ่อพระใส เป็นพระพุทธรูปขัดสมาธิราบปางมารวิชัย หล่อด้วยทองสีสุก มีพุทธลักษณะงดงาม ตามตำนานเล่าว่าสร้างขึ้นโดยพระราชธิดา 3 พระองค์ของกษัตริย์ล้านช้าง
@@ -58,7 +66,7 @@ export const nongKhaiAttractions: Attraction[] = [
     name: "สะพานมิตรภาพไทย-ลาว",
     description: "สะพานข้ามแม่น้ำโขง เชื่อมต่อประเทศไทยและลาว",
     highlight: "สะพานข้ามแม่น้ำโขง",
-    image: "./images/nong_khai/saphan_mitraphap_thai_lao.jpg",
+    image: saphanMitraphapImg,
     details: `
       สะพานมิตรภาพไทย-ลาว แห่งที่ 1 (Thai-Lao Friendship Bridge 1) เป็นสะพานข้ามแม่น้ำโขงที่เชื่อมต่อระหว่างจังหวัดหนองคายของประเทศไทย กับนครหลวงเวียงจันทน์ของสาธารณรัฐประชาธิปไตยประชาชนลาว เป็นสัญลักษณ์แห่งมิตรภาพและความร่วมมือระหว่างสองประเทศ
 
@@ -76,11 +84,11 @@ export const nongKhaiAttractions: Attraction[] = [
     description:
       "แม่น้ำโขง… สายน้ำที่ไม่เคยหลับใหล และตำนานพญานาคที่ยังมีลมหายใจ",
     highlight: "ลานพญานาคริมโขง",
-    image: "./images/nong_khai/lan_phaya_nak_rim_khong.jpg",
+    image: lanPhayaNakImg,
     details: `ลานพญานาคริมโขง (Lan Phaya Nak) แลนด์มาร์กสำคัญของคนมาเที่ยวหนองคาย สถานที่ที่สามารถบอกเล่าความเชื่อต่อพญานาค และความผูกพันกับแม่น้ำโขงของชาวหนองคายที่มีมาอย่างยาวนาน
     
     ผ่านประติมากรรมพญานาคสีทองขนาดมหึมา 2 ตัวพ่นน้ำอยู่ริมฝั่งโขงแห่งนี้
-ลานพญานาคริมโขง หรือลานวัฒนธรรมหน้าวัดลำดวน มีเอกลักษณ์อันโดดเด่นคือพญานาคขนาดมหึมา 2 ตัว ความสูง 15 เมตร ความยาวลำตัว 45 เมตร พ่นน้ำอย่างสง่างามอยู่ริมฝั่งโขง สะท้อนถึงวิถีชีวิต ความเชื่อ ความผูกพันที่ชาวหนองคายมีต่อพญานาคและแม่น้ำโขงที่มีมาอย่างยาวนาน
+ลานพญานาคริมโขง หรือลานวัฒนธรรมหน้าวัดลำดวน มีเอกลักษณ์อันโดดเด่นคือพญานาคขนาดมหึมา 2 ตัว ความสูง 15 เมตร ความยาวลำตัว 45 เมตร พ่นน้ำอย่างสง่างามอยู่ริมฝั่งโขง สะท้อนถึงวิถีชีวิต ความเชื่อ ความผูกพันที่ชาวหนองคายมีมาอย่างยาวนาน
     `,
   },
   {
@@ -89,7 +97,7 @@ export const nongKhaiAttractions: Attraction[] = [
     name: "ตลาดแคมของ",
     description: "ตลาดแคมของ ถนนริมโขงหนองคาย",
     highlight: "ตลาดแคมของ ถนนริมโขงหนองคาย",
-    image: "./images/nong_khai/talat_khaem_khong.jpg",
+    image: talatKhaemKhongImg,
     details:
       "ตลาดแคมของ หรือถนนคนเดินหนองคาย เป็นตลาดนัดยามเย็นริมฝั่งโขง มีจำหน่ายสินค้าพื้นเมือง อาหารท้องถิ่น และของที่ระลึกมากมาย บรรยากาศดี เหมาะแก่การเดินเล่นพักผ่อน ชมวิวแม่น้ำโขงยามค่ำคืน",
   },
