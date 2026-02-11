@@ -117,7 +117,7 @@ export default function NongKhaiPage() {
                                 {/* Attraction Image */}
                                 <div className="relative h-56 overflow-hidden">
                                     <Image
-                                        src={attraction.image.replace('./', '../../')}
+                                        src={attraction.image}
                                         alt={attraction.name}
                                         fill
                                         className="object-cover group-hover:scale-110 transition-transform duration-500"

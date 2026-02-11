@@ -44,7 +44,7 @@ export default async function AttractionDetailPage(props: AttractionDetailProps)
             {/* Hero Image */}
             <div className="relative h-[60vh] w-full">
                 <Image
-                    src={attraction.image.replace("./", "../../../")} // Fix dot path for deep route
+                    src={attraction.image}
                     alt={attraction.name}
                     fill
                     className="object-cover"
