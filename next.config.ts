@@ -5,6 +5,7 @@ const isProd = process.env.NODE_ENV === "production";
 const nextConfig: NextConfig = {
   output: "export",
   basePath: isProd ? "/pai_nai_dee" : undefined,
+  assetPrefix: isProd ? "/pai_nai_dee" : undefined,
   images: {
     unoptimized: true,
   },
