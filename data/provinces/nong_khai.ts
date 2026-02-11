@@ -1,10 +1,10 @@
 import { StaticImageData } from "next/image";
-import namTokThanThongImg from "@/assets/images/nong_khai/nam_tok_than_thong.jpg";
-import nongKutThingImg from "@/assets/images/nong_khai/nong_kut_thing.jpg";
-import watPhoChaiImg from "@/assets/images/nong_khai/wat_pho_chai.jpg";
-import saphanMitraphapImg from "@/assets/images/nong_khai/saphan_mitraphap_thai_lao.jpg";
-import lanPhayaNakImg from "@/assets/images/nong_khai/lan_phaya_nak_rim_khong.jpg";
-import talatKhaemKhongImg from "@/assets/images/nong_khai/talat_khaem_khong.jpg";
+import namTokThanThongImg from "@/public/images/nong_khai/nam_tok_than_thong.jpg";
+import nongKutThingImg from "@/public/images/nong_khai/nong_kut_thing.jpg";
+import watPhoChaiImg from "@/public/images/nong_khai/wat_pho_chai.jpg";
+import saphanMitraphapImg from "@/public/images/nong_khai/saphan_mitraphap_thai_lao.jpg";
+import lanPhayaNakImg from "@/public/images/nong_khai/lan_phaya_nak_rim_khong.jpg";
+import talatKhaemKhongImg from "@/public/images/nong_khai/talat_khaem_khong.jpg";
 
 export interface Attraction {
   id: number;
