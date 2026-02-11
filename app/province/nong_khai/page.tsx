@@ -41,7 +41,7 @@ export default function NongKhaiPage() {
             <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
                 {/* Background Image */}
                 <Image
-                    src="./images/nong_khai/nong_khai_page.jpg"
+                    src="/images/nong_khai/nong_khai_page.jpg"
                     alt="หนองคาย"
                     fill
                     className="object-cover z-0"
@@ -151,7 +151,7 @@ export default function NongKhaiPage() {
                         {/* Featured Image */}
                         <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl">
                             <Image
-                                src="./images/nong_khai/wat-pho-chai-featured.jpg"
+                                src="/images/nong_khai/wat-pho-chai-featured.jpg"
                                 alt="วัดโพธิ์ชัย"
                                 fill
                                 className="object-cover"
