@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { nongKhaiAttractions } from "@/data/provinces/nong_khai";
-import NongKhaiPage2 from "@/assets/images/nong_khai/nong_khai_page.jpg";
-import WatPhoChaiFeatured from "@/assets/images/nong_khai/wat-pho-chai-featured.jpg";
+import NongKhaiPage2 from "@/public/images/nong_khai/nong_khai_page.jpg";
+import WatPhoChaiFeatured from "@/public/images/nong_khai/wat-pho-chai-featured.jpg";
 
 export default function NongKhaiPage() {
     const attractions = nongKhaiAttractions;
