@@ -151,7 +151,7 @@ export default function NongKhaiPage() {
                         {/* Featured Image */}
                         <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl">
                             <Image
-                                src="../../images/nong_khai/wat-pho-chai-featured.jpg"
+                                src="./images/nong_khai/wat-pho-chai-featured.jpg"
                                 alt="วัดโพธิ์ชัย"
                                 fill
                                 className="object-cover"
