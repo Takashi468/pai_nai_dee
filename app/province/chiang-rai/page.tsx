@@ -8,42 +8,42 @@ export default function ChiangRaiPage() {
             name: "วัดร่องขุ่น",
             description: "วัดสีขาวอันศักดิ์สิทธิ์ ผลงานศิลปะชิ้นเอกของอาจารย์เฉลิมชัย โฆษิตพิพัฒน์",
             highlight: "สถาปัตยกรรมสีขาวอันงดงาม",
-            image: "/images/chiang-rai/wat-rong-khun.jpg",
+            image: "./images/chiang-rai/wat-rong-khun.jpg",
         },
         {
             id: 2,
             name: "ดอยแม่สลอง",
             description: "ยอดเขาที่มีอากาศเย็นสบาย ชมพระอาทิตย์ขึ้นและไร่ชาที่สวยงาม",
             highlight: "ไร่ชาและวิวพระอาทิตย์ขึ้น",
-            image: "/images/chiang-rai/doi-mae-salong.jpg",
+            image: "./images/chiang-rai/doi-mae-salong.jpg",
         },
         {
             id: 3,
             name: "พระธาตุดอยตุง",
             description: "พระธาตุศักดิ์สิทธิ์บนยอดดอย ศาสนสถานสำคัญของภาคเหนือ",
             highlight: "จุดชมวิวพร้อมสายหมอก",
-            image: "/images/chiang-rai/doi-tung.jpg",
+            image: "./images/chiang-rai/doi-tung.jpg",
         },
         {
             id: 4,
             name: "สามเหลี่ยมทองคำ",
             description: "จุดบรรจบของสามประเทศ ไทย ลาว และเมียนมา ริมแม่น้ำโขง",
             highlight: "ล่องเรือชมทิวทัศน์",
-            image: "/images/chiang-rai/golden-triangle.jpg",
+            image: "./images/chiang-rai/golden-triangle.jpg",
         },
         {
             id: 5,
             name: "วัดร่องเสือเต้น",
             description: "วัดสีฟ้าสวยงาม ศิลปะร่วมสมัยผสมผสานความเชื่อดั้งเดิม",
             highlight: "สถาปัตยกรรมสีฟ้าเขียว",
-            image: "/images/chiang-rai/wat-rong-suea-ten.jpg",
+            image: "./images/chiang-rai/wat-rong-suea-ten.jpg",
         },
         {
             id: 6,
             name: "ภูชี้ฟ้า",
             description: "ยอดดอยสูงสุดของจังหวัด ชมทะเลหมอกยามเช้าที่งดงาม",
             highlight: "ทะเลหมอกยามเช้า",
-            image: "/images/chiang-rai/phu-chi-fa.jpg",
+            image: "./images/chiang-rai/phu-chi-fa.jpg",
         },
     ];
 
@@ -83,7 +83,7 @@ export default function ChiangRaiPage() {
             <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
                 {/* Background Image */}
                 <Image
-                    src="/images/chiang_rai_page.jpg"
+                    src="./images/chiang_rai_page.jpg"
                     alt="เชียงราย"
                     fill
                     className="object-cover z-0"
@@ -193,7 +193,7 @@ export default function ChiangRaiPage() {
                         {/* Featured Image */}
                         <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl">
                             <Image
-                                src="/images/chiang-rai/wat-rong-khun-featured.jpg"
+                                src="./images/chiang-rai/wat-rong-khun-featured.jpg"
                                 alt="วัดร่องขุ่น"
                                 fill
                                 className="object-cover"

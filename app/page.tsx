@@ -9,7 +9,7 @@ export default function Home() {
       province: "เชียงราย",
       description: "สูงสุดดอยแม่สลอง พระบรมธาตุเจดีย์ศรีนครินทร์สถิตมหาสันติคีรี",
       color: "from-purple-500 to-indigo-600",
-      image: "/images/North_main.png",
+      image: "./images/North_main.png",
       url: "/province/chiang-rai",
     },
     {
@@ -18,7 +18,7 @@ export default function Home() {
       province: "เพชรบุรี",
       description: "เที่ยวเมืองพริบพรี เพชรบุรีเมืองอาหารสร้างสรรค์",
       color: "from-amber-400 to-orange-500", // Gold theme
-      image: "/images/Central_main.png",
+      image: "./images/Central_main.png",
       url: "#",
     },
     {
@@ -27,7 +27,7 @@ export default function Home() {
       province: "อุดรธานี",
       description: "สู่ทะเลบัวแดงกุมภวาปี สวรรค์สัตว์ป่าแห่งภาคอีสาน",
       color: "from-orange-500 to-red-500",
-      image: "/images/East_main.png",
+      image: "./images/East_main.png",
       url: "#",
     },
     {
@@ -36,7 +36,7 @@ export default function Home() {
       province: "สตูล",
       description: "ทะเลไทยสวยไม่แพ้ที่ใดในโลก",
       color: "from-blue-400 to-cyan-500", // Blue theme
-      image: "/images/South_main.png",
+      image: "./images/South_main.png",
       url: "#",
     },
   ];
@@ -68,7 +68,7 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <Image
-          src="/images/thailand.jpg"
+          src="./images/thailand.jpg"
           alt="ประเทศไทย"
           fill
           className="object-cover z-0"
@@ -168,7 +168,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-[600px]">
             <div className="md:col-span-2 relative rounded-2xl overflow-hidden group shadow-lg">
               <Image
-                src="/images/East_sup.png"
+                src="./images/East_sup.png"
                 alt="ทะเลบัวแดง อุดรธานี"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -181,7 +181,7 @@ export default function Home() {
             <div className="flex flex-col gap-6">
               <div className="flex-1 relative rounded-2xl overflow-hidden group shadow-lg">
                 <Image
-                  src="/images/North_sup.png"
+                  src="./images/North_sup.png"
                   alt="ดอยแม่สลอง เชียงราย"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -192,7 +192,7 @@ export default function Home() {
               </div>
               <div className="flex-1 relative rounded-2xl overflow-hidden group shadow-lg">
                 <Image
-                  src="/images/South_sup.png"
+                  src="./images/South_sup.png"
                   alt="เกาะหินงาม สตูล"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
