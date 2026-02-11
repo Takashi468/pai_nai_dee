@@ -41,7 +41,7 @@ export default function NongKhaiPage() {
             <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
                 {/* Background Image */}
                 <Image
-                    src="./../images/nong_khai/nong_khai_page.jpg"
+                    src="./images/nong_khai/nong_khai_page.jpg"
                     alt="หนองคาย"
                     fill
                     className="object-cover z-0"
