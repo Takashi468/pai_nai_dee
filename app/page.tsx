@@ -9,7 +9,7 @@ export default function Home() {
       province: "เชียงราย",
       description: "สูงสุดดอยแม่สลอง พระบรมธาตุเจดีย์ศรีนครินทร์สถิตมหาสันติคีรี",
       color: "from-purple-500 to-indigo-600",
-      image: "./images/North_main.png",
+      image: "/images/North_main.png",
       url: "/province/chiang-rai",
     },
     {
@@ -18,7 +18,7 @@ export default function Home() {
       province: "เพชรบุรี",
       description: "เที่ยวเมืองพริบพรี เพชรบุรีเมืองอาหารสร้างสรรค์",
       color: "from-amber-400 to-orange-500", // Gold theme
-      image: "./images/Central_main.png",
+      image: "/images/Central_main.png",
       url: "#",
     },
     {
@@ -27,7 +27,7 @@ export default function Home() {
       province: "หนองคาย",
       description: "มหาประตูสู่อินโดจีน ถิ่นวีรกรรมปราบฮ่อ หลวงพ่อพระใส",
       color: "from-orange-500 to-red-500",
-      image: "./images/East_main.png", // Reusing existing image for now
+      image: "/images/nong_khai/nong_khai_page.jpg",
       url: "/province/nong_khai",
     },
     {
@@ -36,7 +36,7 @@ export default function Home() {
       province: "ชลบุรี",
       description: "ทะเลสวย น้ำใส ใกล้กรุง แหล่งรวมความบันเทิง",
       color: "from-blue-400 to-teal-400",
-      image: "./images/East_main.png", // Reusing existing image
+      image: "/images/East_main.png", // Reusing existing image
       url: "#",
     },
     {
@@ -45,7 +45,7 @@ export default function Home() {
       province: "กาญจนบุรี",
       description: "ดินแดนแห่งประวัติศาสตร์ ธรรมชาติขุนเขา และสายน้ำ",
       color: "from-green-500 to-emerald-600",
-      image: "./images/Central_main.png", // Reusing existing image
+      image: "/images/Central_main.png", // Reusing existing image
       url: "#",
     },
     {
@@ -54,7 +54,7 @@ export default function Home() {
       province: "สตูล",
       description: "ทะเลไทยสวยไม่แพ้ที่ใดในโลก",
       color: "from-blue-500 to-indigo-500", // Deep Blue theme
-      image: "./images/South_main.png",
+      image: "/images/South_main.png",
       url: "#",
     },
   ];
