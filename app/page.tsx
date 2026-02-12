@@ -106,7 +106,7 @@ export default function Home() {
             ค้นพบความสวยงาม<span className="text-gradient-gold">ของไทย</span>
           </h1>
           <p className="mt-4 text-xl md:text-2xl text-slate-200 max-w-2xl mx-auto font-light leading-relaxed">
-            เดินทางสู่ 4 ภาค 4 บรรยากาศ ที่คุณจะหลงรัก<br />
+            เดินทางสู่ 6 ภาค 6 บรรยากาศ ที่คุณจะหลงรัก<br />
             เหนือ กลาง อีสาน ใต้ ครบจบในที่เดียว
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
