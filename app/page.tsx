@@ -54,7 +54,7 @@ export default function Home() {
       province: "สุราษฎร์ธานี",
       description: "หนีเมืองไปหาป่า หาเขา และเรา(เหล้า)",
       color: "from-blue-500 to-indigo-500", // Deep Blue theme
-      image: "./images/surat_thani/surat_thani_page.jpg",
+      image: "./images/surat_thani/surat_thani.jpg",
       url: "/province/surat_thani",
     },
   ];

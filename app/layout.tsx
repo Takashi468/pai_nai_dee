@@ -10,7 +10,7 @@ const prompt = Prompt({
 
 export const metadata: Metadata = {
   title: "ไปไหนดี - ท่องเที่ยวไทย 6 ภาค",
-  description: "ค้นพบความงามของประเทศไทย 6 ภาค เชียงราย เพชรบุรี หนองคาย ชลบุรี กาญจนบุรี สตูล",
+  description: "ค้นพบความงามของประเทศไทย 6 ภาค เชียงราย เพชรบุรี หนองคาย ชลบุรี กาญจนบุรี สุราษฎร์ธานี",
 };
 
 export default function RootLayout({
