@@ -6,11 +6,11 @@ export default function Home() {
     {
       id: "north",
       name: "ภาคเหนือ",
-      province: "เชียงราย",
-      description: "สูงสุดดอยแม่สลอง พระบรมธาตุเจดีย์ศรีนครินทร์สถิตมหาสันติคีรี",
+      province: "น่าน",
+      description: "เมืองเก่าที่มีชีวิต ท่ามกลางหุบเขาอันเงียบสงบ โดดเด่นด้วยวัฒนธรรม",
       color: "from-purple-500 to-indigo-600",
-      image: "./images/North_main.png",
-      url: "/province/chiang-rai",
+      image: "./images/nan/nan_page.jpg",
+      url: "/province/nan",
     },
     {
       id: "central",
@@ -45,17 +45,17 @@ export default function Home() {
       province: "กาญจนบุรี",
       description: "ดินแดนแห่งประวัติศาสตร์ ธรรมชาติขุนเขา และสายน้ำ",
       color: "from-green-500 to-emerald-600",
-      image: "./images/Central_main.png", // Reusing existing image
-      url: "#",
+      image: "./images/kanchanaburi/kanchanaburi_page.jpg",
+      url: "/province/kanchanaburi",
     },
     {
       id: "south",
       name: "ภาคใต้",
-      province: "สตูล",
-      description: "ทะเลไทยสวยไม่แพ้ที่ใดในโลก",
+      province: "สุราษฎร์ธานี",
+      description: "หนีเมืองไปหาป่า หาเขา และเรา(เหล้า)",
       color: "from-blue-500 to-indigo-500", // Deep Blue theme
-      image: "./images/South_main.png",
-      url: "#",
+      image: "./images/surat_thani/surat_thani_page.jpg",
+      url: "/province/surat_thani",
     },
   ];
 
