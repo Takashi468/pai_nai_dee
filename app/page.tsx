@@ -36,8 +36,8 @@ export default function Home() {
       province: "ชลบุรี",
       description: "ทะเลสวย น้ำใส ใกล้กรุง แหล่งรวมความบันเทิง",
       color: "from-blue-400 to-teal-400",
-      image: "./images/East_main.png", // Reusing existing image
-      url: "#",
+      image: "./images/chon_buri/chon_buri.jpg", // Reusing existing image
+      url: "/province/chon_buri",
     },
     {
       id: "west",
