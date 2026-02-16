@@ -15,11 +15,11 @@ export default function Home() {
     {
       id: "central",
       name: "ภาคกลาง",
-      province: "เพชรบุรี",
-      description: "เที่ยวเมืองพริบพรี เพชรบุรีเมืองอาหารสร้างสรรค์",
+      province: "พิษณุโลก",
+      description: "พระพุทธชินราชงามเลิศ ถิ่นกำเนิดพระนเรศวร",
       color: "from-amber-400 to-orange-500", // Gold theme
-      image: "./images/Central_main.png",
-      url: "#",
+      image: "./images/phitsanulok/phitsanulok_page.jpg",
+      url: "/province/phitsanulok",
     },
     {
       id: "northeast",
