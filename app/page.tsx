@@ -187,7 +187,7 @@ export default function Home() {
             {/* Main Highlight: Kanchanaburi */}
             <Link href="/province/kanchanaburi" className="md:col-span-2 relative rounded-2xl overflow-hidden group shadow-lg cursor-pointer">
               <Image
-                src="/images/kanchanaburi/river_kwai_bridge.jpg"
+                src="./images/kanchanaburi/river_kwai_bridge.jpg"
                 alt="สะพานข้ามแม่น้ำแคว กาญจนบุรี"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -205,7 +205,7 @@ export default function Home() {
               {/* Secondary Highlight 1: Phitsanulok */}
               <Link href="/province/phitsanulok" className="flex-1 relative rounded-2xl overflow-hidden group shadow-lg cursor-pointer">
                 <Image
-                  src="/images/phitsanulok/wat_yai.jpg"
+                  src="./images/phitsanulok/wat_yai.jpg"
                   alt="วัดพระศรีรัตนมหาธาตุ พิษณุโลก"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -219,7 +219,7 @@ export default function Home() {
               {/* Secondary Highlight 2: Nan */}
               <Link href="/province/nan" className="flex-1 relative rounded-2xl overflow-hidden group shadow-lg cursor-pointer">
                 <Image
-                  src="/images/nan/doi_samer_dao.jpg"
+                  src="./images/nan/doi_samer_dao.jpg"
                   alt="ดอยเสมอดาว น่าน"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
