@@ -86,7 +86,7 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <Image
-          src="./images/thailand.jpg"
+          src="/images/thailand.jpg"
           alt="ประเทศไทย"
           fill
           className="object-cover z-0"
@@ -178,47 +178,57 @@ export default function Home() {
               <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-2">สถานที่ยอดนิยม</h2>
               <p className="text-slate-600 dark:text-slate-400">จุดเช็คอินที่คุณไม่ควรพลาด</p>
             </div>
-            <Link href="#" className="hidden md:block text-thai-purple font-semibold hover:text-thai-blue transition-colors">
+            {/* <Link href="#" className="hidden md:block text-thai-purple font-semibold hover:text-thai-blue transition-colors">
               ดูทั้งหมด →
-            </Link>
+            </Link> */}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-[600px]">
-            <div className="md:col-span-2 relative rounded-2xl overflow-hidden group shadow-lg">
+            {/* Main Highlight: Kanchanaburi */}
+            <Link href="/province/kanchanaburi" className="md:col-span-2 relative rounded-2xl overflow-hidden group shadow-lg cursor-pointer">
               <Image
-                src="./images/East_sup.png"
-                alt="ทะเลบัวแดง อุดรธานี"
+                src="/images/kanchanaburi/river_kwai_bridge.jpg"
+                alt="สะพานข้ามแม่น้ำแคว กาญจนบุรี"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8">
-                <h3 className="text-2xl font-bold text-white mb-2">ทะเลบัวแดง, อุดรธานี</h3>
-                <p className="text-slate-300">ล่องเรือชมความงามแห่งบึงหนองหาน</p>
+              <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-8">
+                <span className="inline-block px-3 py-1 bg-amber-600 text-white text-xs font-bold rounded-full w-fit mb-3">
+                  ห้ามพลาด
+                </span>
+                <h3 className="text-3xl font-bold text-white mb-2">สะพานข้ามแม่น้ำแคว, กาญจนบุรี</h3>
+                <p className="text-slate-200 text-lg">สัญลักษณ์แห่งสันติภาพและประวัติศาสตร์โลก</p>
               </div>
-            </div>
+            </Link>
+
             <div className="flex flex-col gap-6">
-              <div className="flex-1 relative rounded-2xl overflow-hidden group shadow-lg">
+              {/* Secondary Highlight 1: Phitsanulok */}
+              <Link href="/province/phitsanulok" className="flex-1 relative rounded-2xl overflow-hidden group shadow-lg cursor-pointer">
                 <Image
-                  src="./images/North_sup.png"
-                  alt="ดอยแม่สลอง เชียงราย"
+                  src="/images/phitsanulok/wat_yai.jpg"
+                  alt="วัดพระศรีรัตนมหาธาตุ พิษณุโลก"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6">
-                  <h3 className="text-xl font-bold text-white">ดอยแม่สลอง, เชียงราย</h3>
+                <div className="absolute inset-0 bg-linear-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end p-6">
+                  <h3 className="text-xl font-bold text-white mb-1">วัดใหญ่, พิษณุโลก</h3>
+                  <p className="text-slate-300 text-sm">พระพุทธชินราชงามเลิศ</p>
                 </div>
-              </div>
-              <div className="flex-1 relative rounded-2xl overflow-hidden group shadow-lg">
+              </Link>
+
+              {/* Secondary Highlight 2: Nan */}
+              <Link href="/province/nan" className="flex-1 relative rounded-2xl overflow-hidden group shadow-lg cursor-pointer">
                 <Image
-                  src="./images/South_sup.png"
-                  alt="เกาะหินงาม สตูล"
+                  src="/images/nan/doi_samer_dao.jpg"
+                  alt="ดอยเสมอดาว น่าน"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6">
-                  <h3 className="text-xl font-bold text-white">เกาะหินงาม, สตูล</h3>
+                <div className="absolute inset-0 bg-linear-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end p-6">
+                  <h3 className="text-xl font-bold text-white mb-1">ดอยเสมอดาว, น่าน</h3>
+                  <p className="text-slate-300 text-sm">นอนดูดาว สัมผัสลมหนาว</p>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

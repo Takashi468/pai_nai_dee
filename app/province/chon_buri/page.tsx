@@ -188,7 +188,7 @@ export default function ChonBuriPage() {
                                 </li>
                             </ul>
                             <Link
-                                href="https://maps.app.goo.gl/..."
+                                href="https://maps.app.goo.gl/rrHgegsKGbwXzwNu8"
                                 target="_blank"
                                 className="inline-flex items-center px-6 py-3 rounded-full bg-cyan-600 hover:bg-cyan-500 text-white font-bold transition-all transform hover:-translate-y-1 gap-2"
                             >

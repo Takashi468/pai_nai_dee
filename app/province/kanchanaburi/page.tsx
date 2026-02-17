@@ -188,7 +188,7 @@ export default function KanchanaburiPage() {
                                 </li>
                             </ul>
                             <Link
-                                href="https://maps.app.goo.gl/YourMapLinkHere"
+                                href="https://maps.app.goo.gl/dM1JYEkKNFxDzE3w5"
                                 target="_blank"
                                 className="inline-flex items-center px-6 py-3 rounded-full bg-amber-600 hover:bg-amber-700 text-white font-bold transition-all transform hover:-translate-y-1 gap-2"
                             >
