@@ -3,8 +3,8 @@ import Image from "next/image";
 import { phitsanulokAttractions } from "@/data/provinces/phitsanulok";
 
 // Using placeholder paths since images are not yet available
-const PhitsanulokPageBg = "/images/phitsanulok/phitsanulok_page.jpg";
-const WatPhraSiRattanaMahathatFeatured = "/images/phitsanulok/wat_yai_featured.jpg";
+const PhitsanulokPageBg = "@/public/images/phitsanulok/phitsanulok_page.jpg";
+const WatPhraSiRattanaMahathatFeatured = "@/public/images/phitsanulok/wat_yai_featured.jpg";
 
 export default function PhitsanulokPage() {
     const attractions = phitsanulokAttractions;

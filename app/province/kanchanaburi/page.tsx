@@ -2,8 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { kanchanaburiAttractions } from "@/data/provinces/kanchanaburi";
 
-const KanchanaburiPageBg = "/images/kanchanaburi/kanchanaburi_page.jpg";
-const BridgeOverKwaiFeatured = "/images/kanchanaburi/river_kwai_bridge.jpg";
+const KanchanaburiPageBg = "@/public/images/kanchanaburi/kanchanaburi_page.jpg";
+const BridgeOverKwaiFeatured = "@/public/images/kanchanaburi/river_kwai_bridge.jpg";
 
 export default function KanchanaburiPage() {
     const attractions = kanchanaburiAttractions;
