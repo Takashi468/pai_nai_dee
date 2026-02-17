@@ -126,9 +126,16 @@ export default function SuratThaniPage() {
                                 </div>
 
                                 <div className="p-6">
-                                    <span className="inline-block px-3 py-1 text-xs font-semibold text-blue-800 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/30 rounded-full mb-3">
-                                        {attraction.highlight}
-                                    </span>
+                                    <div className="flex flex-wrap gap-2 mb-3">
+                                        <span className="inline-block px-3 py-1 text-xs font-semibold text-blue-800 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/30 rounded-full">
+                                            {attraction.highlight}
+                                        </span>
+                                        {attraction.location && (
+                                            <span className="inline-block px-3 py-1 text-xs font-semibold text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 rounded-full">
+                                                📍 {attraction.location}
+                                            </span>
+                                        )}
+                                    </div>
                                     <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{attraction.name}</h3>
                                     <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
                                         {attraction.description}

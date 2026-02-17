@@ -53,9 +53,16 @@ export default async function AttractionDetailPage(props: AttractionDetailProps)
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 w-full p-8 md:p-16">
                     <div className="max-w-7xl mx-auto">
-                        <span className="inline-block px-4 py-1 rounded-full bg-thai-blue text-white text-sm font-semibold mb-4">
-                            {attraction.highlight}
-                        </span>
+                        <div className="flex flex-wrap gap-2 mb-4">
+                            <span className="inline-block px-4 py-1 rounded-full bg-thai-blue text-white text-sm font-semibold">
+                                {attraction.highlight}
+                            </span>
+                            {attraction.location && (
+                                <span className="inline-block px-4 py-1 rounded-full bg-white/20 backdrop-blur-md text-white text-sm font-semibold">
+                                    📍 {attraction.location}
+                                </span>
+                            )}
+                        </div>
                         <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-lg mb-4">{attraction.name}</h1>
                     </div>
                 </div>
@@ -69,6 +76,14 @@ export default async function AttractionDetailPage(props: AttractionDetailProps)
                         <p className="text-lg leading-relaxed text-slate-700 dark:text-slate-300 whitespace-pre-line">
                             {attraction.details}
                         </p>
+
+                        {attraction.funnyCaption && (
+                            <div className="mt-8 p-6 rounded-2xl bg-linear-to-r from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 border-l-4 border-thai-blue">
+                                <p className="text-base md:text-lg italic text-slate-700 dark:text-slate-300 text-center">
+                                    "{attraction.funnyCaption}"
+                                </p>
+                            </div>
+                        )}
 
                         <div className="mt-12 pt-8 border-t border-slate-200 dark:border-zinc-800 flex flex-col sm:flex-row gap-4 justify-between items-center">
                             <p className="text-slate-500 italic">
